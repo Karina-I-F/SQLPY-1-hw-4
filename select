@@ -1,0 +1,19 @@
+select Name, Year from Album
+	where Year = 2018;
+
+select Name, Duration from Track
+	order by Duration desc
+	limit 1;
+
+select Name from Track
+	where Duration > '00:03:30';
+
+select Name from Collection
+	where Year between 2018 and 2020;
+
+select Name from Singer
+	where Name not like '% %';
+
+select Name from Track
+	where Name like '% my %' or Name like '% мой %' or Name like '%My %' or Name like '%Мой %';
+  
